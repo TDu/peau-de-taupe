@@ -1,0 +1,1 @@
+    autocmd FileType peaudtaupe nnoremap <c-j>:echom "RRHHAA"

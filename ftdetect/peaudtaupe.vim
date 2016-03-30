@@ -1,0 +1,1 @@
+au BufRead,BufNewFile taupe.txt set filetype=peaudtaupe

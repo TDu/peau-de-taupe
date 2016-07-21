@@ -1,7 +1,7 @@
 "Just as information for now
 let task = "☐"
 let taskdone = "☑"
-let note = "-"
+let note = "."
 let event = "⚪"
 
 ""autocmd!
@@ -13,7 +13,7 @@ autocmd FileType peaudtaupe  nnoremap <c-j>n 'jkk
 autocmd FileType peaudtaupe  inoremap <c-j>td ☑
 autocmd FileType peaudtaupe  inoremap <c-j>t ☐
 autocmd FileType peaudtaupe  inoremap <c-j>e ⚪
-autocmd FileType peaudtaupe  inoremap <c-j>n -
+autocmd FileType peaudtaupe  inoremap <c-j>n .
 
 "To switch through the bullet used for each category of entry
 function! SwitchCategory()

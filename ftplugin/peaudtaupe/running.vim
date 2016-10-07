@@ -8,12 +8,12 @@ let event = "⚪"
 "Move to the end of the file on opening
 autocmd BufRead taupe.txt :$
 "Position the cursor on writting position for next entry
-autocmd FileType peaudtaupe  nnoremap <c-j>n 'jkk
+autocmd FileType peaudtaupe  nnoremap <c-l>n 'jkk
 "Help insert entry types symbols in insert mode
-autocmd FileType peaudtaupe  inoremap <c-j>td ☑
-autocmd FileType peaudtaupe  inoremap <c-j>t ☐
-autocmd FileType peaudtaupe  inoremap <c-j>e ⚪
-autocmd FileType peaudtaupe  inoremap <c-j>n .
+autocmd FileType peaudtaupe  inoremap <c-l>td ☑
+autocmd FileType peaudtaupe  inoremap <c-l>t ☐
+autocmd FileType peaudtaupe  inoremap <c-l>e ⚪
+autocmd FileType peaudtaupe  inoremap <c-l>n .
 
 "To switch through the bullet used for each category of entry
 function! SwitchCategory()
@@ -40,4 +40,4 @@ function! SwitchCategory()
     normal `t
 endfunction
 
-autocmd FileType peaudtaupe nnoremap <c-j><c-j> :call SwitchCategory()<CR>
+autocmd FileType peaudtaupe nnoremap <c-l><c-l> :call SwitchCategory()<CR>
